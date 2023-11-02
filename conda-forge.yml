@@ -7,3 +7,8 @@ github:
 provider:
   linux_aarch64: default
   linux_ppc64le: default
+noarch_platforms:
+  - linux_64
+  - linux_aarch64
+  - linux_ppc64le
+  - win_64
