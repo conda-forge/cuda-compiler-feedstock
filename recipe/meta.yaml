@@ -1,3 +1,6 @@
+{% set exists = "which" %}  # [linux]
+{% set exists = "where" %}  # [win]
+
 package:
   name: cuda-compiler
   version: 12.0.0
@@ -22,10 +25,10 @@ requirements:
 
 test:
   commands:
-    - which cuobjdump  # [linux]
-    - which cu++filt   # [linux]
-    - which nvcc       # [linux]
-    - which nvprune    # [linux]
+    - {{ exists }} cuobjdump
+    - {{ exists }} cu++filt
+    - {{ exists }} nvcc
+    - {{ exists }} nvprune
 
 about:
   home: https://developer.nvidia.com/cuda-toolkit
