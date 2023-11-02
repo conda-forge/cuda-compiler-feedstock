@@ -8,10 +8,11 @@ source:
 
 build:
   number: 0
-  skip: true  # [osx]
+  noarch: generic
 
 requirements:
   run:
+    - __{{ noarch_platforms }}
     - c-compiler
     - cxx-compiler
     - cuda-cuobjdump 12.0.76
