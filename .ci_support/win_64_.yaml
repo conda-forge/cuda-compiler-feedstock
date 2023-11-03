@@ -1,12 +1,8 @@
 c_compiler:
-- gcc
-cdt_name:
-- cos6
+- vs2019
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- gxx
-docker_image:
-- quay.io/condaforge/linux-anvil-cos7-x86_64
+- vs2019
