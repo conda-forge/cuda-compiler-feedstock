@@ -15,7 +15,8 @@ build:
 
 requirements:
   run:
-    - __{{ noarch_platforms }}
+    - __linux  # [linux]
+    - __win    # [win]
     - c-compiler
     - cxx-compiler
     - cuda-cuobjdump 12.0.76
