@@ -1,16 +1,17 @@
+{% set version = "12.1.1" %}
 {% set exists = "which" %}  # [linux]
 {% set exists = "where" %}  # [win]
 
 package:
   name: cuda-compiler
-  version: 12.0.0
+  version: {{ version }}
 
 source:
   url: https://developer.download.nvidia.com/compute/cuda/redist/cuda_documentation/LICENSE.txt
   sha256: 5db25d4fd138013b563f9a3d1d87f7de7df1dac014fd4cccdfbb3435a5cff761
 
 build:
-  number: 1
+  number: 0
   noarch: generic
 
 requirements:
@@ -19,10 +20,10 @@ requirements:
     - __win    # [win]
     - c-compiler
     - cxx-compiler
-    - cuda-cuobjdump 12.0.76
-    - cuda-cuxxfilt 12.0.76
-    - cuda-nvcc 12.0.76
-    - cuda-nvprune 12.0.76
+    - cuda-cuobjdump 12.1.111
+    - cuda-cuxxfilt 12.1.105
+    - cuda-nvcc 12.1.105
+    - cuda-nvprune 12.1.105
 
 test:
   commands:
@@ -44,4 +45,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - adibbley
+    - conda-forge/cuda
