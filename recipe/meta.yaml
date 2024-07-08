@@ -1,4 +1,4 @@
-{% set version = "12.5.0" %}
+{% set version = "12.5.1" %}
 {% set exists = "which" %}  # [linux]
 {% set exists = "where" %}  # [win]
 
@@ -21,9 +21,9 @@ requirements:
     - c-compiler
     - cxx-compiler
     - cuda-cuobjdump 12.5.39
-    - cuda-cuxxfilt 12.5.39
-    - cuda-nvcc 12.5.40
-    - cuda-nvprune 12.5.39
+    - cuda-cuxxfilt 12.5.82
+    - cuda-nvcc 12.5.82
+    - cuda-nvprune 12.5.82
 
 test:
   commands:
