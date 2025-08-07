@@ -1,4 +1,4 @@
-{% set version = "12.9.1" %}
+{% set version = "13.0.0" %}
 {% set exists = "" %}  # [not (linux or win)]
 {% set exists = "which" %}  # [linux]
 {% set exists = "where" %}  # [win]
@@ -21,10 +21,11 @@ requirements:
     - __win    # [win]
     - c-compiler
     - cxx-compiler
-    - cuda-cuobjdump 12.9.82
-    - cuda-cuxxfilt 12.9.82
-    - cuda-nvcc 12.9.86
-    - cuda-nvprune 12.9.82
+    - cuda-cuobjdump 13.0.39
+    - cuda-cuxxfilt 13.0.39
+    - cuda-nvcc 13.0.48
+    - cuda-nvprune 13.0.39
+    - cuda-ctadvisor 13.0.39
 
 test:
   commands:
@@ -32,6 +33,7 @@ test:
     - {{ exists }} cu++filt
     - {{ exists }} nvcc
     - {{ exists }} nvprune
+    - {{ exists }} ctadvisor
 
 about:
   home: https://developer.nvidia.com/cuda-toolkit
