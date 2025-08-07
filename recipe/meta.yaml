@@ -25,7 +25,7 @@ requirements:
     - cuda-cuxxfilt 13.0.39
     - cuda-nvcc 13.0.48
     - cuda-nvprune 13.0.39
-    - cuda-ctadvisor 13.0.0
+    - cuda-ctadvisor 13.0.39
 
 test:
   commands:
