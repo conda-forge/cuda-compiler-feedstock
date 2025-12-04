@@ -26,6 +26,7 @@ requirements:
     - cuda-nvcc 13.1.80
     - cuda-nvprune 13.1.80
     - cuda-ctadvisor 13.1.80
+    - cuda-tileiras 13.1.80
 
 test:
   commands:
@@ -34,6 +35,7 @@ test:
     - {{ exists }} nvcc
     - {{ exists }} nvprune
     - {{ exists }} ctadvisor
+    - {{ exists }} tileiras
 
 about:
   home: https://developer.nvidia.com/cuda-toolkit
