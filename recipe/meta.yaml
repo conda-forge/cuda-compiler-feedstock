@@ -1,4 +1,4 @@
-{% set version = "13.4.1" %}
+{% set version = "13.4.2" %}
 {% set exists = "" %}  # [not (linux or win)]
 {% set exists = "which" %}  # [linux]
 {% set exists = "where" %}  # [win]
@@ -21,12 +21,12 @@ requirements:
     - __win    # [win]
     - c-compiler
     - cxx-compiler
-    - cuda-cuobjdump 13.4.49
-    - cuda-cuxxfilt 13.4.49
-    - cuda-nvcc 13.4.59
-    - cuda-nvprune 13.4.49
-    - cuda-ctadvisor 13.4.49
-    - cuda-tileiras 13.4.59
+    - cuda-cuobjdump 13.4.92
+    - cuda-cuxxfilt 13.4.92
+    - cuda-nvcc 13.4.92
+    - cuda-nvprune 13.4.92
+    - cuda-ctadvisor 13.4.92
+    - cuda-tileiras 13.4.92
 
 test:
   commands:
